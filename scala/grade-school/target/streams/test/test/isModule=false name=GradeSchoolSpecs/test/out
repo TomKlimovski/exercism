@@ -1,0 +1,8 @@
+[0m[[0minfo[0m] [0m[32mGradeSchoolSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty school[0m[0m
+[0m[[0minfo[0m] [0m[32m- add student[0m[0m
+[0m[[0minfo[0m] [0m[32m- add more students in same class[0m[0m
+[0m[[0minfo[0m] [0m[32m- add students to different grades[0m[0m
+[0m[[0minfo[0m] [0m[32m- get students in a grade[0m[0m
+[0m[[0minfo[0m] [0m[32m- get students in a non-existant grade[0m[0m
+[0m[[0minfo[0m] [0m[32m- sort school[0m[0m

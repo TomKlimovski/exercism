@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0m[32mCrytpoSquareTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should normalize away special characters[0m[0m
+[0m[[0minfo[0m] [0m[32m- should normalize uppercase to lowercase[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc a square size for a perfect square[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc a square size when not a perfect square[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not generate calc error when empty string[0m[0m
+[0m[[0minfo[0m] [0m[32m- should build plaintext segments - all equal segment lengths[0m[0m
+[0m[[0minfo[0m] [0m[32m- should build plaintext segments - last segment short[0m[0m
+[0m[[0minfo[0m] [0m[32m- should build cipher text[0m[0m
+[0m[[0minfo[0m] [0m[32m- should build normalized cipher text[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not error on blank strings[0m[0m

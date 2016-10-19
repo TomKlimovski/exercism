@@ -1,0 +1,8 @@
+[0m[[0minfo[0m] [0m[32mHammingSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect no difference between empty strands[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect no difference between identical strands[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect complete hamming distance in small strand[0m[0m
+[0m[[0minfo[0m] [0m[32m- should give hamming distance in off by one strand[0m[0m
+[0m[[0minfo[0m] [0m[32m- should give small hamming distance in middle somewhere[0m[0m
+[0m[[0minfo[0m] [0m[32m- should give a larger distance[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be undefined for strands of unequal length[0m[0m

@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0m[32mAnagramSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect no matches[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect simple anagrams[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect multiple anagrams[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not confuse different duplicates[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not include identical words[0m[0m
+[0m[[0minfo[0m] [0m[32m- should elimitate anagrams with same checksum[0m[0m
+[0m[[0minfo[0m] [0m[32m- should eliminate anagrams subsets[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect anagrams[0m[0m
+[0m[[0minfo[0m] [0m[32m- should detect more anagrams[0m[0m
+[0m[[0minfo[0m] [0m[32m- should treat anagrams as case insensitive[0m[0m

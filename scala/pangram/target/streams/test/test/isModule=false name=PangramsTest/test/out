@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mPangramsTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- sentence empty[0m[0m
+[0m[[0minfo[0m] [0m[32m- pangram with only lower case[0m[0m
+[0m[[0minfo[0m] [0m[32m- missing character 'x'[0m[0m
+[0m[[0minfo[0m] [0m[32m- another missing character 'x'[0m[0m
+[0m[[0minfo[0m] [0m[32m- pangram with underscores[0m[0m
+[0m[[0minfo[0m] [0m[32m- pangram with numbers[0m[0m
+[0m[[0minfo[0m] [0m[32m- missing letters replaced by numbers[0m[0m
+[0m[[0minfo[0m] [0m[32m- pangram with mixed case and punctuation[0m[0m
+[0m[[0minfo[0m] [0m[32m- pangram with non ascii characters[0m[0m

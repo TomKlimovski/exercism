@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mPhoneNumberSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should clean the number[0m[0m
+[0m[[0minfo[0m] [0m[32m- should clean numbers with dots[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be valid when 11 digits and first is 1[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be invalid when 11 digits[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be invalid when 9 digits[0m[0m
+[0m[[0minfo[0m] [0m[32m- should give the area code[0m[0m
+[0m[[0minfo[0m] [0m[32m- should format the number[0m[0m
+[0m[[0minfo[0m] [0m[32m- should format full us phone numbers[0m[0m

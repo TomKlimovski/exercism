@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mAllergiesTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle no allergies means not allergic[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle is allergic to eggs[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle is allergic to eggs in addition to other stuff[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle no allergies[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to just eggs[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to just peanuts[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to just strawberries[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to eggs and peanuts[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to more than eggs but not peanuts[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to lots of stuff[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle allergic to everything[0m[0m
+[0m[[0minfo[0m] [0m[32m- should ignore non allergen score parts[0m[0m

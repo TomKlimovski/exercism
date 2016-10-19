@@ -1,0 +1,12 @@
+[0m[[0minfo[0m] [0m[32mPrimeFactorsTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc empty list[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 2[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 3[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 4[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 6[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 8[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 9[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 27[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 625[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 901255[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc prime factors of 93819012551[0m[0m

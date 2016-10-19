@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mAccumulateTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow empty accumulation[0m[0m
+[0m[[0minfo[0m] [0m[32m- should accumulate squares[0m[0m
+[0m[[0minfo[0m] [0m[32m- should accumulate upcases[0m[0m
+[0m[[0minfo[0m] [0m[32m- should accumulate reversed strings[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow different return type[0m[0m

@@ -1,0 +1,22 @@
+[0m[[0minfo[0m] [0m[32mAllYourBaseTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- single bit one to decimal[0m[0m
+[0m[[0minfo[0m] [0m[32m- binary to single decimal[0m[0m
+[0m[[0minfo[0m] [0m[32m- single decimal to binary[0m[0m
+[0m[[0minfo[0m] [0m[32m- binary to multiple decimal[0m[0m
+[0m[[0minfo[0m] [0m[32m- decimal to binary[0m[0m
+[0m[[0minfo[0m] [0m[32m- trinary to hexadecimal[0m[0m
+[0m[[0minfo[0m] [0m[32m- hexadecimal to trinary[0m[0m
+[0m[[0minfo[0m] [0m[32m- 15-bit integer[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty list[0m[0m
+[0m[[0minfo[0m] [0m[32m- single zero[0m[0m
+[0m[[0minfo[0m] [0m[32m- multiple zeros[0m[0m
+[0m[[0minfo[0m] [0m[32m- leading zeros[0m[0m
+[0m[[0minfo[0m] [0m[32m- negative digit[0m[0m
+[0m[[0minfo[0m] [0m[32m- invalid positive digit[0m[0m
+[0m[[0minfo[0m] [0m[32m- first base is one[0m[0m
+[0m[[0minfo[0m] [0m[32m- second base is one[0m[0m
+[0m[[0minfo[0m] [0m[32m- first base is zero[0m[0m
+[0m[[0minfo[0m] [0m[32m- second base is zero[0m[0m
+[0m[[0minfo[0m] [0m[32m- first base is negative[0m[0m
+[0m[[0minfo[0m] [0m[32m- second base is negative[0m[0m
+[0m[[0minfo[0m] [0m[32m- both bases are negative[0m[0m

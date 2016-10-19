@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mNucleotideCountSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32mempty dna string[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have no adenine[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have no nucleotides[0m[0m
+[0m[[0minfo[0m] [0m[32ma repetitive sequence[0m[0m
+[0m[[0minfo[0m] [0m[32m- should count cytosine[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have only guanine[0m[0m
+[0m[[0minfo[0m] [0m[32ma mixed dna string[0m[0m
+[0m[[0minfo[0m] [0m[32m- should count only thymine[0m[0m
+[0m[[0minfo[0m] [0m[32m- should count a nucleotide only once[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not change counts after counting adenine[0m[0m
+[0m[[0minfo[0m] [0m[32m- should validate nucleotides[0m[0m
+[0m[[0minfo[0m] [0m[32m- should validate dna not rna[0m[0m
+[0m[[0minfo[0m] [0m[32m- should validate dna[0m[0m
+[0m[[0minfo[0m] [0m[32m- should count all nucleotides[0m[0m

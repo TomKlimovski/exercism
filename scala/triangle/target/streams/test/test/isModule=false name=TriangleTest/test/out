@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mTriangleTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Equilateral[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Equilateral2[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Isosceles[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Isosceles2[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Scalene[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Illogical[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Illogical with zero length side[0m[0m
+[0m[[0minfo[0m] [0m[32m- should calc Illogical with negative length side[0m[0m

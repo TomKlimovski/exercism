@@ -1,0 +1,8 @@
+[0m[[0minfo[0m] [0m[32mscrabble_score_test:[0m[0m
+[0m[[0minfo[0m] [0m[32m- score letter lowercase[0m[0m
+[0m[[0minfo[0m] [0m[32m- score letter uppercase[0m[0m
+[0m[[0minfo[0m] [0m[32m- score word[0m[0m
+[0m[[0minfo[0m] [0m[32m- score word with dupe letters[0m[0m
+[0m[[0minfo[0m] [0m[32m- score quirky word[0m[0m
+[0m[[0minfo[0m] [0m[32m- score capitalized word[0m[0m
+[0m[[0minfo[0m] [0m[32m- score mixed case word[0m[0m

@@ -1,0 +1,19 @@
+[0m[[0minfo[0m] [0m[32mSublistSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty lists[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty is a sublist of anything[0m[0m
+[0m[[0minfo[0m] [0m[32m- anything is a superlist of empty[0m[0m
+[0m[[0minfo[0m] [0m[32m- List(1) is not List(2)[0m[0m
+[0m[[0minfo[0m] [0m[32m- compare larger equal lists[0m[0m
+[0m[[0minfo[0m] [0m[32m- sublist at start[0m[0m
+[0m[[0minfo[0m] [0m[32m- sublist in middle[0m[0m
+[0m[[0minfo[0m] [0m[32m- sublist at end[0m[0m
+[0m[[0minfo[0m] [0m[32m- partially matching sublist at start[0m[0m
+[0m[[0minfo[0m] [0m[32m- sublist early in huge list[0m[0m
+[0m[[0minfo[0m] [0m[32m- huge sublist not in huge list[0m[0m
+[0m[[0minfo[0m] [0m[32m- superlist at start[0m[0m
+[0m[[0minfo[0m] [0m[32m- superlist in middle[0m[0m
+[0m[[0minfo[0m] [0m[32m- superlist at end[0m[0m
+[0m[[0minfo[0m] [0m[32m- partially matching superlist at start[0m[0m
+[0m[[0minfo[0m] [0m[32m- superlist early in huge list[0m[0m
+[0m[[0minfo[0m] [0m[32m- recurring values sublist[0m[0m
+[0m[[0minfo[0m] [0m[32m- recurring values unequal[0m[0m

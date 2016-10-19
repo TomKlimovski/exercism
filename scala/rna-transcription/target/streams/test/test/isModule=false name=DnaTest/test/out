@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mDnaTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- transcribes blank string[0m[0m
+[0m[[0minfo[0m] [0m[32m- transcribes cytidine to guanosine[0m[0m
+[0m[[0minfo[0m] [0m[32m- transcribes guanosine to cytidine[0m[0m
+[0m[[0minfo[0m] [0m[32m- transcribes adenosine to uracil[0m[0m
+[0m[[0minfo[0m] [0m[32m- transcribes thymidine to adenosine[0m[0m
+[0m[[0minfo[0m] [0m[32m- transcribes all ACGT to UGCA[0m[0m
