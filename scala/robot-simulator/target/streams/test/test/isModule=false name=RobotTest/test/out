@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mRobotTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- create[0m[0m
+[0m[[0minfo[0m] [0m[32m- advance - positive[0m[0m
+[0m[[0minfo[0m] [0m[32m- advance - negative[0m[0m
+[0m[[0minfo[0m] [0m[32m- turning[0m[0m
+[0m[[0minfo[0m] [0m[32m- turning - edge cases[0m[0m
+[0m[[0minfo[0m] [0m[32m- simulate Seurat[0m[0m
+[0m[[0minfo[0m] [0m[32m- simulate Erasmus[0m[0m
+[0m[[0minfo[0m] [0m[32m- simulate Chirox[0m[0m
+[0m[[0minfo[0m] [0m[32m- simulate Awesomo[0m[0m
