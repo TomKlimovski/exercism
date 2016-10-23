@@ -1,26 +1,7 @@
 [0m[[0minfo[0m] [0m[32mQueensTest:[0m[0m
-[0m[[0minfo[0m] [0m[31m- empty boardString *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  "... _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[]" did not equal "... _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[[0m[0m
-[0m[[0minfo[0m] [0m[31m  ]" (QueensTest.scala:5)[0m[0m
-[0m[[0minfo[0m] [0m[31m- boardString *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  "..._ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ [_ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _]" did not equal "..._ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ [W _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ B _[0m[0m
-[0m[[0minfo[0m] [0m[31m  _ _ _ _ _ _ _ _[0m[0m
-[0m[[0minfo[0m] [0m[31m  ]" (QueensTest.scala:17)[0m[0m
-[0m[[0minfo[0m] [0m[31m- canAttack - false *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  true was not false (QueensTest.scala:29)[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty boardString[0m[0m
+[0m[[0minfo[0m] [0m[32m- boardString[0m[0m
+[0m[[0minfo[0m] [0m[32m- canAttack - false[0m[0m
 [0m[[0minfo[0m] [0m[32m- canAttack - vert attack[0m[0m
 [0m[[0minfo[0m] [0m[32m- canAttack - horiz attack[0m[0m
 [0m[[0minfo[0m] [0m[32m- canAttack - diag attack[0m[0m
