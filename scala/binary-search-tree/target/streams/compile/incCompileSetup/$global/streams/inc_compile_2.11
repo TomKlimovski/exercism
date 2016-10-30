@@ -1,0 +1,182 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+11 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$1.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$bfsLoop$1$1.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$childrenLeftRight$1.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$dfs$1.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$dfs$2.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$dfs$3.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$fromList$1.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$map$1.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$map$2.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$.class
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst.class
+binary dependencies:
+2 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> /Users/tomklimovski/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+11 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$bfsLoop$1$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$childrenLeftRight$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$dfs$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$dfs$2
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$dfs$3
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$fromList$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$map$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst$$anonfun$map$2
+used names:
+75 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> $conforms
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> &&
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> ::
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> <
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> <=
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> <init>
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> ==
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> AnyRef
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Bst
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Function1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> List
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Nil
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Node
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> None
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Option
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Ordered
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Ordering
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Predef
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Product
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> ScalaRunTime
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Serializable
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> T
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> Unit
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> V
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> _hashCode
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> _root_
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> _toString
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> accum
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> annotation
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> apply
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> asInstanceOf
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> bfsLoop
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> c
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> canBuildFrom
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> childrenLeftRight
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> createOrInsert
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> dfs
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> eq
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> evidence$1
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> f
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> flatMap
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> flatten
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> foldLeft
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> get
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> head
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> immutable
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> insert
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> isEmpty
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> isInstanceOf
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> l
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> left
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> ls
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> map
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> math
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> newValue
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> nextLayer
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> node
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> option2Iterable
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> orderingToOrdered
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> output
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> package
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> r
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> reverse
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> right
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> runtime
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> scala
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> sortWith
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> t
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> tail
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> tailrec
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> toString
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> tree
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> typedProductIterator
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> value
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> ||
+product stamps:
+11 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$1.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$bfsLoop$1$1.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$childrenLeftRight$1.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$dfs$1.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$dfs$2.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$dfs$3.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$fromList$1.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$map$1.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$$anonfun$map$2.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst$.class -> lastModified(1477374118000)
+/Users/tomklimovski/exercism/scala/binary-search-tree/target/scala-2.11/classes/Bst.class -> lastModified(1477374118000)
+source stamps:
+1 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> hash(3358a7f5e78242be10d29c5b20307e1852ec2e5f)
+binary stamps:
+2 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1428689516000)
+/Users/tomklimovski/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> lastModified(1435004218000)
+class names:
+2 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/tomklimovski/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> scala.Serializable
+internal apis:
+1 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAzQAkgAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAMHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLKhYXN0AAZub3RpZnlzcQB+AAwPsVWmdAAHdW5hcHBseXNxAH4ADN8o7UN0AAR3YWl0c3EAfgAMTeUtgnQADmNvcHkkZGVmYXVsdCQyc3EAfgAM0GqLrnQADSRhc0luc3RhbmNlT2ZzcQB+AAyyaCzKdAAGaW5zZXJ0c3EAfgAMdGGAjHQAA21hcHNxAH4ADLe5MBV0AAxwcm9kdWN0QXJpdHlzcQB+AAwFMdjEdAAGZXF1YWxzc3EAfgAMXp064nQABnRvTGlzdHNxAH4ADF6jWkV0AAxhc0luc3RhbmNlT2ZzcQB+AAzwWCe2dAAIZnJvbUxpc3RzcQB+AAy2mogXdAAMc3luY2hyb25pemVkc3EAfgAMIMIyAnQABGxlZnRzcQB+AAyBr7AQdAADYmZzc3EAfgAMywhKAXQADSRpc0luc3RhbmNlT2ZzcQB+AAyjREApdAAETm9kZXNxAH4ADFa5LI50AA9hcHBseSRkZWZhdWx0JDNzcQB+AAwz0OoXdAADQnN0c3EAfgAMmoVVO3QACGNhbkVxdWFsc3EAfgAMRyQF3HQADXByb2R1Y3RQcmVmaXhzcQB+AAxs/0b/dAAJbm90aWZ5QWxsc3EAfgAMnDKpnXQAC3JlYWRSZXNvbHZlc3EAfgAMWBogAXQADGlzSW5zdGFuY2VPZnNxAH4ADK6sPxd0AANkZnNzcQB+AAwBC9W5dAAQPGluaXQ+JGRlZmF1bHQkM3NxAH4ADEKFawJ0AAY8aW5pdD5zcQB+AAwt42WCdAAPYXBwbHkkZGVmYXVsdCQyc3EAfgAMYoF7SHQABWFwcGx5c3EAfgAM8YbXBHQAAj09c3EAfgAMegQXXHQABWNsb25lc3EAfgAMUzB8/XQADmNvcHkkZGVmYXVsdCQzc3EAfgAME04MSHQABGNvcHlzcQB+AAxlqx2pdAAIdG9TdHJpbmdzcQB+AAzW0Rq0dAARY2hpbGRyZW5MZWZ0UmlnaHRzcQB+AAzMYv58dAACIT1zcQB+AAwoMQ1ZdAAIZ2V0Q2xhc3NzcQB+AAySONxUdAAOY29weSRkZWZhdWx0JDFzcQB+AAxMS4cadAACbmVzcQB+AAzGuQQUdAAFdmFsdWVzcQB+AAytVm8ZdAAQPGluaXQ+JGRlZmF1bHQkMnNxAH4ADHlZ+hd0AAJlcXNxAH4ADC9+FN50AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAyO+gtgdAAFcmlnaHRzcQB+AAwxf1HNdAACIyNzcQB+AAxHx3uhdAAIZmluYWxpemVzcQB+AAzLsoHRdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAyvTZgOdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgB3eHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAcQB+ADN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcmdpVdvjcpBrAgAGWwALYW5ub3RhdGlvbnNxAH4AfEwAAmlkcQB+AA1MAApsb3dlckJvdW5kdAAQTHhzYnRpL2FwaS9UeXBlO1sADnR5cGVQYXJhbWV0ZXJzcQB+AHlMAAp1cHBlckJvdW5kcQB+AIlMAAh2YXJpYW5jZXQAFEx4c2J0aS9hcGkvVmFyaWFuY2U7eHB1cQB+AIIAAAAAdAAFQnN0LlRzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwdAAHTm90aGluZ3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AkHN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
+external apis:
+0 items
+source infos:
+1 items
+/Users/tomklimovski/exercism/scala/binary-search-tree/src/main/scala/Bst.scala -> 
+AAAAAAAAAAA=
+compilations:
+3 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABV/pEiuJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATy9Vc2Vycy90b21rbGltb3Zza2kvZXhlcmNpc20vc2NhbGEvYmluYXJ5LXNlYXJjaC10cmVlL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABV/pF+291cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATy9Vc2Vycy90b21rbGltb3Zza2kvZXhlcmNpc20vc2NhbGEvYmluYXJ5LXNlYXJjaC10cmVlL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABV/pcBiN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATy9Vc2Vycy90b21rbGltb3Zza2kvZXhlcmNpc20vc2NhbGEvYmluYXJ5LXNlYXJjaC10cmVlL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv

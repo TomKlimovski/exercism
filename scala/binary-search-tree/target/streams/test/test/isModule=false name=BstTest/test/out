@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mBstTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should retain data[0m[0m
+[0m[[0minfo[0m] [0m[32m- should retain data - char[0m[0m
+[0m[[0minfo[0m] [0m[32m- should insert less[0m[0m
+[0m[[0minfo[0m] [0m[32m- should insert less - char[0m[0m
+[0m[[0minfo[0m] [0m[32m- should insert same[0m[0m
+[0m[[0minfo[0m] [0m[32m- should insert greater than[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle complex tree - sort out of order list[0m[0m
+[0m[[0minfo[0m] [0m[32m- should iterating one element[0m[0m
+[0m[[0minfo[0m] [0m[32m- should iterating over smaller element[0m[0m
+[0m[[0minfo[0m] [0m[32m- should iterating over larger element[0m[0m
+[0m[[0minfo[0m] [0m[32m- should iterating over complex tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- should iterating over complex tree - chars[0m[0m
