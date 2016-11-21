@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0m[32mBracketsTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- paired square brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty string[0m[0m
+[0m[[0minfo[0m] [0m[32m- unpaired brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- wrong ordered brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- paired with whitespace[0m[0m
+[0m[[0minfo[0m] [0m[32m- simple nested brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- several paired brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- paired and nested brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- unopened closing brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- unpaired and nested brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- paired and wrong nested brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- math expression[0m[0m
+[0m[[0minfo[0m] [0m[32m- complex latex expression[0m[0m
