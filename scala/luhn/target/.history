@@ -1,0 +1,11 @@
+test
+�est
+test
+exit
+test
+test -feature
+compile -feature
+compile
+run -feature
+test
+exit

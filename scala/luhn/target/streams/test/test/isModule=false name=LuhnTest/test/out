@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mLuhnTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create checkDigit[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create addends[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create checksum[0m[0m
+[0m[[0minfo[0m] [0m[32m- should check validity[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create luhn values[0m[0m
