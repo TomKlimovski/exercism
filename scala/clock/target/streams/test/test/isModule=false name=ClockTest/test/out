@@ -1,0 +1,52 @@
+[0m[[0minfo[0m] [0m[32mClockTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should construct from hour/min[0m[0m
+[0m[[0minfo[0m] [0m[32m- should construct from minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should implement equals[0m[0m
+[0m[[0minfo[0m] [0m[32m- should support wraparound[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle hour rolls over continuously[0m[0m
+[0m[[0minfo[0m] [0m[32m- should implement 60 min as the next hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should construct consistently between constructors[0m[0m
+[0m[[0minfo[0m] [0m[32m- should support rolling over minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle minutes rolling over consistently[0m[0m
+[0m[[0minfo[0m] [0m[32m- should support rolling over both hours and minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle hours and minutes rolling over consistently[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle hours and minutes rolling over to midnight[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle negative hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle rolling over negative hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle negative hours rolling over consistently[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle negative minute[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle rolling over negative minute[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle negative minutes rolling over consistently[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle negative hour and minutes roll over[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle negative hour and minutes rolling over consistently[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add no minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add to next hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add more than one hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add more than two hours with carry[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add across midnight[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add more than one day (1500 min == 25 hours)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add more than 2 days[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract to previous hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract more than an hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract across midnight[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract more than two hours[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract more than two hours with borrow[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract more than one day (1500 min = 25 hrs)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should subtract more than two days[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with same time[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks that are one minute apart[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks that are one hour apart[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with hour overflow[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with hour overflow by several days[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative hour[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative hour that wraps[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative hour that wraps multiple times[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with minute overflow[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with minute overflow by several days[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative minute[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative minute that wraps[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative minute that wraps mutiple times[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative hours and minute[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle equality of clocks with negative hours and minute that wrap[0m[0m
