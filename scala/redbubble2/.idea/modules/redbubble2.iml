@@ -22,18 +22,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="SBT: com.lihaoyi:scalatags_2.11:0.6.1:jar">
+      <library name="SBT: com.typesafe:config:1.2.1:jar">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.lihaoyi/scalatags_2.11/jars/scalatags_2.11-0.6.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="SBT: com.lihaoyi:sourcecode_2.11:0.1.1:jar">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.lihaoyi/sourcecode_2.11/jars/sourcecode_2.11-0.1.1.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
