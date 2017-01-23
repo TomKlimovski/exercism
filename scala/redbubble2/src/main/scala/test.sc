@@ -5,22 +5,6 @@ object sandbox {
 
   println(s"Does it work? $tom")
 
-  //val url = "http://take-home-test.herokuapp.com/api/v1/works.xml"
-  val url = "/Users/tomklimovski/exercism/scala/redbubble2/src/test/scala/file.xml"
-  val fileString = scala.io.Source.fromFile(url).mkString
-
-  val map: Map[String, String] = Map("Leica" -> "Lux", "Seik" -> "Lux")
-
-  map.groupBy(_._2).mapValues(_.keys.toSet)
-
-  val node = scala.xml.XML.loadString(fileString)
-
-  for {n <- node.child
-       if (!((n \\ "make").text.trim.isEmpty))
-  } yield {
-    println((n \\ "model").text + " - " +  (n \\ "make").text)
-  }
-
   val sets: Seq[String] = Seq("Sets", "Usual")
 
   sets.zipWithIndex
@@ -34,5 +18,9 @@ object sandbox {
   def getTB(tb: Thumbnail): Seq[Thumbnail] = {
     Seq(Thumbnail("this", "sucks"), Thumbnail("yes", "does"))
   }
+
+  val nails = Thumbnail("small","http://ih1.redbubble.net/work.31820.1.flat,135x135,075,f.jpg")
+
+  nails.url.split(",")(1).split('x')
 
 }

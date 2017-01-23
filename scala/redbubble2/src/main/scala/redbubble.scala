@@ -28,9 +28,19 @@ class Redbubble(node: scala.xml.Elem) {
   val Url_head = "<!DOCTYPE html>\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">"
   val Url_style = "<style type=\"text/css\">\nnav { \nmargin: 10px;}\n</style>\n</head>\n<body>\n<header>"
   val Url_end = "</header>\n</body></html>"
+
   val BaseDir = System.getProperty("user.dir")
   val TargetHtml = ConfigFactory.load().getConfig("redbubble").getString("html_path")
+  val IndexPath:  String = s"$BaseDir$TargetHtml/index.html"
   val CameraMakePath = ConfigFactory.load().getConfig("redbubble").getString("camera_make_path")
+  val CameraModelPath = ConfigFactory.load().getConfig("redbubble").getString("camera_model_path")
+
+  val Url_index:  String = "<nav>\n<a href=\"" + IndexPath + "\">Index</a>\n</nav>"
+
+  val DefaultImageHeight = ConfigFactory.load().getConfig("redbubble").getString("thumbnail_image_height")
+  val DefaultImageWidth = ConfigFactory.load().getConfig("redbubble").getString("thumbnail_image_width")
+  val AllPictureSize = ConfigFactory.load().getConfig("redbubble").getString("all_picture_size")
+  val NumberOfWorktoDisplay = ConfigFactory.load().getConfig("redbubble").getInt("number_of_work_to_display")
 
   def fromXML(make: String, model: Seq[String], thumbNails: Seq[Thumbnail]): Cameras =
     new Cameras {
@@ -76,7 +86,7 @@ class Redbubble(node: scala.xml.Elem) {
   }
 
   //case class AllMakeModelThumbNails(make: String, model: String, thumbnail: Thumbnail)
-  lazy val getAllMakeModelThumbNails: Seq[AllMakeModelThumbNails] = {
+  val allMakeModelThumbNails: Seq[AllMakeModelThumbNails] = {
     for {n <- node.child
          urls <- (n \\ "url")
     } yield {
@@ -87,73 +97,124 @@ class Redbubble(node: scala.xml.Elem) {
   }
 
   //get ALL camera models that exist in the file, even duplicates
-  private def getAllCameraModels(cameraMake: String): Seq[String] = {
-    getAllMakeModelThumbNails.filter(_.make == cameraMake).map(_.model)
-  }
+  private def getAllCameraModels(cameraMake: String): Seq[String] =
+     allMakeModelThumbNails.filter(_.make == cameraMake).map(_.model)
 
   //get thumbNails specific to a camera make
   private def getCameraMakeThumbNails(cameraMake: String): Seq[Thumbnail] =
     getAllMakeAndThumbnails.filter(_.make == cameraMake).map(_.thumbnail)
 
+  private def getCameraModelThumbNails(cameraModel: String): Seq[Thumbnail] =
+    allMakeModelThumbNails.filter(_.model == cameraModel).map(_.thumbnail)
+
+  private val allCameraMakes: Seq[String] =
+    allMakeModelThumbNails.map(_.make).distinct
+
   //needed because not all works contain a camera make. requirement is to grab first 10 thumbnail-works, but doesn't
   //mention whether a camera created the photo
-  private def getIndexThumbNails: Seq[Thumbnail] =
+  private val getIndexThumbnails: Seq[Thumbnail] =
     getAllMakeAndThumbnails.map(_.thumbnail)
 
-//  private def getCameraModelThumbNails: Seq[Thumbnail] =
-//    getAllMakeAndThumbnails.map(_.thumbnail)
-
-  private def printCameras(works: Cameras) = {
-    println(s"Here's the models for the makes: ${works.cameraModels.distinct}")
+  private def htmlAhref(toPrint: String, path: String): String = {
+    ("<a href=\"" + BaseDir + TargetHtml + path + "/" +
+      toPrint + ".html\">" + toPrint + "</a> | \n").mkString("")
+  }
+  private def htmlTitle(toPrint: String): String = {
+    s"<title>$toPrint</title>"
+  }
+  private def htmlHeader(toPrint: String): String = {
+    s"<h1>$toPrint</h1>"
+  }
+  private def htmlIMG(url: String): String = {
+    "<img height=\""+ getThumbnailHeight(url) + "\"width=\"" + getThumbnailWidth(url) + "\"src=\"" + (url)+ "\">\n"
   }
 
-  def printHTML(allWorks: Seq[Cameras]) = {
+  private def getThumbnailHeight(url: String) = {
 
-    val title:      String = "<title>Navigation for Works</title>"
-    val header:     String = "<h1>Camera Makes</h1>"
-    val indexPath:  String = s"$BaseDir$TargetHtml/index.html"
+    val getHeight: Try[String] = {
+      Try(url.split(",")(1).split('x')(0))
+    }
 
-    val cameraMakes = (for( works <- allWorks) yield {
-      printHTMLcameras(works)
-      "<a href=\"" + BaseDir + TargetHtml + CameraMakePath + "/" +
-        works.cameraMake + ".html\">" + works.cameraMake + "</a> | \n"
-    }).mkString("")
+    getHeight match {
+      case Success(value) => value.mkString("")
+      case Failure(f) => DefaultImageHeight
+    }
+  }
+  private def getThumbnailWidth(url: String) = {
+    val getWidth: Try[String] = {
+      Try(url.split(",")(1).split('x')(0))
+    }
+
+    getWidth match {
+      case Success(value) => value.mkString("")
+      case Failure(f) => DefaultImageWidth
+    }
+  }
+
+  private def getThumbNails(whichPage: String, generic: String) = {
+
+  }
+
+  private def applyConstraints(tb: Seq[Thumbnail]): String = {
+                                      tb.filter(_.size == AllPictureSize)
+                                      .take(NumberOfWorktoDisplay)
+                                      .map(x => htmlIMG(x.url))
+                                      .mkString("")
+  }
+
+  def printHTMLindex(allWorks: Seq[Cameras]) = {
+
+    val title:  String = htmlTitle("Navigation for Works")
+    val header: String = htmlHeader("Camera Makes")
+
+    val cameraMakes = (
+      for{ cameraMake <- allCameraMakes if(cameraMake != "None")
+      } yield {
+          printCameraMakeWebPages(cameraMake)
+          htmlAhref(cameraMake, CameraMakePath)
+      }).mkString("")
 
     val navCameraMakes = s"<nav>$cameraMakes</nav>"
 
-    val navThumbNails = (for { (thumbNailURLs, index) <- getIndexThumbNails.zipWithIndex
-                               if(index <= 30 && thumbNailURLs.size == "medium")
-    } yield {
-      //Console.err.println(s"I should print 10 -> $thumbNailURLs index $index")
-      "<img height=50 width=50 src=\"" + (thumbNailURLs.url)+ "\">\n"
-    }).mkString("")
-
+    val navThumbNails = applyConstraints(getIndexThumbnails)
 
     val html = Url_head + title + Url_style + header + navCameraMakes + navThumbNails + Url_end
 
-    writeFile(indexPath, html)
+    writeFile(IndexPath, html)
   }
 
-  def printHTMLcameras(works: Cameras) = {
+  def printCameraMakeWebPages(cameraMake: String) = {
 
     //*************
     val title:        String = "<title>Navigation for Works</title>"
-    val header:       String = s"<h1>${works.cameraMake}</h1>"
-    val indexPath:    String = BaseDir + TargetHtml + "/index.html\""
-    val navIndexURL:  String = "<nav>\n<a href=\"" + indexPath + ">Index</a>\n</nav>"
+    val header:       String = s"<h1>$cameraMake</h1>"
 
-    val navCameraModels = (for(models <- works.cameraModels.distinct) yield {
-      "<nav>" + models + "</nav>\n"
-    }).mkString("")
-    val navThumbNails = (for { (thumbNailURLs, index) <- works.thumbNailURLs.zipWithIndex
-                               if(index <= 30 && thumbNailURLs.size == "medium")
-    } yield {
-      "<img height=50 width=50 src=\"" + (thumbNailURLs.url)+ "\">\n"
+    val cameraModels = (for(model <- getAllCameraModels(cameraMake).distinct) yield {
+      printCameraModelWebPages(model)
+      htmlAhref(model, CameraModelPath)
     }).mkString("")
 
-    val html = Url_head + title + Url_style + header + navIndexURL+ navCameraModels + navThumbNails + Url_end
+    val navCameraModels = s"<nav>$cameraModels</nav>"
 
-    writeFile(s"$BaseDir$TargetHtml$CameraMakePath/${works.cameraMake}.html", html.toString)
+    val navCameraMakeThumbNails = applyConstraints(getCameraMakeThumbNails(cameraMake))
+
+    val html = Url_head + title + Url_style + header + Url_index + navCameraModels + navCameraMakeThumbNails + Url_end
+
+    writeFile(s"$BaseDir$TargetHtml$CameraMakePath/$cameraMake.html", html.toString)
+
+  }
+
+  def printCameraModelWebPages(cameraModel: String) = {
+
+    //*************
+    val title:        String = "<title>Navigation for Works</title>"
+    val header:       String = s"<h1>$cameraModel</h1>"
+
+    val modelThumbNails: String = applyConstraints(getCameraModelThumbNails(cameraModel))
+
+    val html: String = Url_head + title + Url_style + header + Url_index + modelThumbNails + Url_end
+
+    writeFile(s"$BaseDir$TargetHtml$CameraModelPath/$cameraModel.html", html.toString)
 
   }
 
@@ -192,7 +253,7 @@ object Redbubble {
     //translates the entire XML to the abstract class Cameras for easy access when creating HTML
     val allWorks: Seq[Cameras] = rb.processXML(rb.cameraMap)
 
-    rb.printHTML(allWorks)
+    rb.printHTMLindex(allWorks)
 
   }
 }
