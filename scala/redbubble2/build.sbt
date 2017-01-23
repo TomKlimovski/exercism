@@ -5,6 +5,7 @@ resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.5" % "test"
 libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.2"
 libraryDependencies += "com.typesafe" % "config" % "1.2.1"
+//libraryDependencies += "org.seleniumhq.selenium" % "selenium-java" % "2.35.0" % "test"
 
 fork in Test := true // allow to apply extra setting to Test
 
