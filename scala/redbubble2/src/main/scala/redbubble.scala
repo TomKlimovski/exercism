@@ -10,6 +10,9 @@ import scala.xml._
 
 
 case class Thumbnail(size: String, url: String)
+case class MakeAndThumbNail(make: String, thumbnail: Thumbnail)
+case class ModelAndThumbNail(model: String, thumbnail: Thumbnail)
+case class AllMakeModelThumbNails(make: String, model: String, thumbnail: Thumbnail)
 
 abstract class Cameras {
   val cameraMake: String
@@ -36,54 +39,69 @@ class Redbubble(node: scala.xml.Elem) {
       val thumbNailURLs: Seq[Thumbnail] = thumbNails
     }
 
-  def cameraMap: Map[String, String] = (
-    for {n <- node.child
-         if (!((n \\ "make").text.trim.isEmpty))
-    } yield {
-      (n \\ "model").text -> (n \\ "make").text
-    }
-    ).toMap
+  def cameraMap: Map[String, Set[String]] = {
 
-  private def getCameraModels(cameraMake: String): Seq[String] = {
-    for {n <- node.child
-         if ( (n \\ "make").text.trim == cameraMake.trim)
-    } yield { (n \\ "model").text}
-  }
+    //maps every model to it's make, trimming works that don't have a camera defined
+    //Map(D-LUX 3 -> LEICA, DMC-FZ30 -> Panasonic, ......
+    val modelMakeMap = (
+      for {n <- node.child
+           if (!((n \\ "make").text.trim.isEmpty))
+      } yield {
+        (n \\ "model").text -> (n \\ "make").text
+      }
+      ).toMap
 
-  private def getThumbNails(cameraMake: String): Seq[Thumbnail] = {
-    for {n <- node.child
-         urls <- (n \\ "url")
-         if ( (n \\ "make").text.trim == cameraMake.trim)
-    } yield {
-      Thumbnail((urls \ "@type").mkString , urls.text)
-    }
-  }
-
-  //needed because not all works contain a camera make. requirement is to grab first 10 thumbnail-works, but doesn't
-  //mention whether a camera created the photo
-  private def getIndexThumbNails: Seq[Thumbnail] = {
-    for {n <- node.child
-         urls <- (n \\ "url")
-    } yield {
-      Thumbnail( (urls \ "@type").mkString , urls.text )
-    }
-  }
-
-  private def getIndexThumbNails: Seq[Thumbnail] = {
-    for {n <- node.child
-         urls <- (n \\ "url")
-    } yield {
-      Thumbnail( (urls \ "@type").mkString , urls.text )
-    }
+    //reverse the mapping above, and groups models to makes
+    //Map(LEICA -> Set(D-LUX 3),FUJI PHOTO FILM CO., LTD. -> Set(SLP1000SE), NIKON CORPORATION -> Set(NIKON D80),
+    (modelMakeMap.groupBy(_._2).mapValues(_.keys.toSet))
   }
 
   private def processXML(cameraMaps: Map[String, Set[String]]): Seq[Cameras] = {
 
     (for {(cameraMake, cameraModel) <- cameraMaps}
       yield {
-        fromXML(cameraMake, getCameraModels(cameraMake), getThumbNails(cameraMake))
+        fromXML(cameraMake, getAllCameraModels(cameraMake), getCameraMakeThumbNails(cameraMake))
       }).toSeq
   }
+
+  //get all thumbNails from file with cameras. Where a cameraMake doesn't exist, substitute empty string with 'None'
+  def getAllMakeAndThumbnails: Seq[MakeAndThumbNail] = {
+    for {n <- node.child
+         urls <- (n \\ "url")
+    } yield {
+      val make = if( (n \\ "make").text.trim.isEmpty ) "None" else (n \\ "make").text.trim
+
+      MakeAndThumbNail(make , (Thumbnail((urls \ "@type").mkString, urls.text)))
+    }
+  }
+
+  //case class AllMakeModelThumbNails(make: String, model: String, thumbnail: Thumbnail)
+  lazy val getAllMakeModelThumbNails: Seq[AllMakeModelThumbNails] = {
+    for {n <- node.child
+         urls <- (n \\ "url")
+    } yield {
+      val make = if( (n \\ "make").text.trim.isEmpty ) "None" else (n \\ "make").text.trim
+
+      AllMakeModelThumbNails(make , (n \\ "model").text, (Thumbnail((urls \ "@type").mkString, urls.text)))
+    }
+  }
+
+  //get ALL camera models that exist in the file, even duplicates
+  private def getAllCameraModels(cameraMake: String): Seq[String] = {
+    getAllMakeModelThumbNails.filter(_.make == cameraMake).map(_.model)
+  }
+
+  //get thumbNails specific to a camera make
+  private def getCameraMakeThumbNails(cameraMake: String): Seq[Thumbnail] =
+    getAllMakeAndThumbnails.filter(_.make == cameraMake).map(_.thumbnail)
+
+  //needed because not all works contain a camera make. requirement is to grab first 10 thumbnail-works, but doesn't
+  //mention whether a camera created the photo
+  private def getIndexThumbNails: Seq[Thumbnail] =
+    getAllMakeAndThumbnails.map(_.thumbnail)
+
+//  private def getCameraModelThumbNails: Seq[Thumbnail] =
+//    getAllMakeAndThumbnails.map(_.thumbnail)
 
   private def printCameras(works: Cameras) = {
     println(s"Here's the models for the makes: ${works.cameraModels.distinct}")
@@ -147,8 +165,6 @@ class Redbubble(node: scala.xml.Elem) {
   }
 }
 
-
-
 object Redbubble {
 
   def getFileFromUrl(file: String): String = {
@@ -166,26 +182,15 @@ object Redbubble {
 
     println("Hello, world! ")
 
-
-
     val url = ConfigFactory.load().getConfig("redbubble").getString("API_URL")
     val node = XML.loadString(getFileFromUrl(url))
+
     val rb = new Redbubble(node)
 
-    //println(s"TB;s -> ${rb.getIndexThumbNails}")
-
-    //maps every model to it's make
-    //Map(D-LUX 3 -> LEICA, DMC-FZ30 -> Panasonic, ......
-    val modelMakeMap: Map[String, String] = rb.cameraMap
-    //Console.println(s"modelMakeMap: $modelMakeMap")
-
-    //reverse the mapping above, and groups models to makes
-    //Map(LEICA -> Set(D-LUX 3),FUJI PHOTO FILM CO., LTD. -> Set(SLP1000SE), NIKON CORPORATION -> Set(NIKON D80),
-    val makeModelMap: Map[String, Set[String]] =  (modelMakeMap.groupBy(_._2).mapValues(_.keys.toSet))
-    //Console.println(s"makeModelMap: $makeModelMap")
+    //println(s"In it's glory: ${rb.getAllMakeModelThumbNails}")
 
     //translates the entire XML to the abstract class Cameras for easy access when creating HTML
-    val allWorks: Seq[Cameras] = rb.processXML(makeModelMap)
+    val allWorks: Seq[Cameras] = rb.processXML(rb.cameraMap)
 
     rb.printHTML(allWorks)
 
