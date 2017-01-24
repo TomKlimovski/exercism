@@ -70,12 +70,12 @@ Create a batch processor that takes data from the API, and produce a single HTML
 ## Assumptions
 
 1. With respect to the API, it looks like not every photo was created by a camera as 'Model' is not present. In these cases, I updated the model to "None" so as to minimise data-leakage.
-2. Requirement 1.1.1 just says 'first 10 work' for displaying thumbnails. Since not every work has a model, I didn't take that as to be a stipulation that every work displayed on the index page had to have a 'Model' associated with it
+2. Requirement 1.1.1 just says 'first 10 work' for displaying thumbnails. Since not every work has a make, I didn't take that as to be a stipulation that every work displayed on the index page had to have a 'Make' associated with it. I just display the first 10 works I find.
 3. Same goes for 2.1.1
 4. Requirement 3.1.1 can be interpreted as displaying thumbnails for the AND condition (CameraMake && Model), i.e. thumbnails for only that Model. Or you could read it as all thumbnails for that camera make, and all thumbnails for that camera model. I assumed the former as displaying all cameraMake thumbnails is taken care of one level up.
-5. The HTML template only calls for 1 <nav> tag between the <header> tags. In the pages for Camera Make and Model, I put 2 <nav>'s, just to break it up a bit for page-readability.
-6. It wasn't explicit from the API URL where the thumbnails were to come from. I took the thumbnails from the tag <urls>
-7. Since I took the thumbnail images from <urls>, I also used the image size numbers embedded in the <url> text so as to size my <img src> tags in my HTML
+5. The HTML template only calls for 1 'nav' tag between the 'header' tags. In the pages for Camera Make and Model, I put 2 'navs', just to break it up a bit for page-readability.
+6. It wasn't explicit from the API URL where the thumbnails were to come from. I took the thumbnails from the tag 'urls'
+7. Since I took the thumbnail images from 'urls', I also used the image size numbers embedded in the 'url' text so as to size my 'img src' tags in my HTML
 8. Since <urls> also displays small/medium/large versions of each file, I added a parameter to my config file: redbubble.all_picture_size which allows you to select which size you want.
 
 ## Notes
