@@ -92,8 +92,8 @@ Model, I put 2 'navs', just to break it up a bit for page-readability.
 6. It wasn't explicit from the API URL where the thumbnails were to come from. I took the thumbnails from the tag 'urls'
 7. Since I took the thumbnail images from 'urls', I also used the image size numbers embedded in the 'url' text 
 so as to size my 'img src' tags in my HTML
-8. Since <urls> also displays small/medium/large versions of each file, I added a parameter to my config file: 
-redbubble.all_picture_size which allows you to select which size you want.
+8. Since 'urls' also displays small/medium/large versions of each file, I added a parameter to my config file: 
+redbubble.all_picture_size which allows you to select which size you want to display across all web pages
 
 ## Notes
  - All requirements have been met.
