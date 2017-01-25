@@ -41,7 +41,7 @@ The Redbubble system has many digital images, often taken with a camera. We have
 Instructions
 Your task is to create a set of static HTML files to allow a user to browse the images contained in the API.
 
-The API is available at: [/api/v1/works.xml](/api/v1/works.xml)
+The API is available at: [/api/v1/works.xml](http://take-home-test.herokuapp.com/api/v1/works.xml)
 
 Create a batch processor that takes data from the API, and produce a single HTML page (based on this output template), for each camera make, camera model and also an index page.
 
