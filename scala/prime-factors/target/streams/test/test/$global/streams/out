@@ -1,8 +1,8 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(PrimeFactorsTest, org.scalatest.tools.Framework$$anon$1@19b320fb, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 133 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 11[0m[0m
-[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
-[0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	PrimeFactorsTest[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PrimeFactorsTest, org.scalatest.tools.Framework$$anon$1@10fb4e1e, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 694 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 11[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PrimeFactorsTest[0m

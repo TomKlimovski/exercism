@@ -1,0 +1,40 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:7:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(6) should be(Right(NumberType.Perfect))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:12:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(28) should be(Right(NumberType.Perfect))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:17:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(33550336) should be(Right(NumberType.Perfect))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:22:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(12) should be(Right(NumberType.Abundant))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:27:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(30) should be(Right(NumberType.Abundant))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:32:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(33550335) should be(Right(NumberType.Abundant))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:37:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(2) should be(Right(NumberType.Deficient))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:42:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(4) should be(Right(NumberType.Deficient))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:47:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(32) should be(Right(NumberType.Deficient))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:52:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(33550337) should be(Right(NumberType.Deficient))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:57:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(1) should be(Right(NumberType.Deficient))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:62:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(0) should be([0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/perfect-numbers/src/test/scala/PerfectNumbersTest.scala:68:20: value classify is not a member of object PerfectNumbers[0m
+[0m[[0m[31merror[0m] [0m[0m    PerfectNumbers.classify(-1) should be([0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
