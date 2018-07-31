@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/bowling/src/main/scala/BowlingSuite.scala:53:61: not found: value badRoll[0m
+[0m[[0m[31merror[0m] [0m[0m      (addToFinalFrame orElse addRollToStandardFrame orElse badRoll)(frames)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

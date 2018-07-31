@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCollatzConjectureTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- zero steps for one[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- divide if even[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- even and odd steps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Large number of even and odd steps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- zero is an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- negative value is an error[0m[0m

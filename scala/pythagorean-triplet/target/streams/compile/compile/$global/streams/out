@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/pythagorean-triplet/src/main/scala/PythagoreanTriplet.scala:3:17: not found: value lower[0m
+[0m[[0m[31merror[0m] [0m[0m    buildCombos(lower, upper).filter(x => (x._1 < x._2) && (x._2 < x._3) && isPythagorean(x._1, x._2, x._3))[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/pythagorean-triplet/src/main/scala/PythagoreanTriplet.scala:3:24: not found: value upper[0m
+[0m[[0m[31merror[0m] [0m[0m    buildCombos(lower, upper).filter(x => (x._1 < x._2) && (x._2 < x._3) && isPythagorean(x._1, x._2, x._3))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

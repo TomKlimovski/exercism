@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/pythagorean-triplet/src/test/scala/PythagoreanTripletTest.scala:18:24: value pythagoreanTriplets is not a member of object PythagoreanTriplet[0m
+[0m[[0m[31merror[0m] [0m[0m    PythagoreanTriplet.pythagoreanTriplets(1, 10) should be (Seq((3, 4, 5), (6, 8, 10)))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/pythagorean-triplet/src/test/scala/PythagoreanTripletTest.scala:23:24: value pythagoreanTriplets is not a member of object PythagoreanTriplet[0m
+[0m[[0m[31merror[0m] [0m[0m    PythagoreanTriplet.pythagoreanTriplets(11, 20) should be (Seq((12, 16, 20)))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/pythagorean-triplet/src/test/scala/PythagoreanTripletTest.scala:28:24: value pythagoreanTriplets is not a member of object PythagoreanTriplet[0m
+[0m[[0m[31merror[0m] [0m[0m    PythagoreanTriplet.pythagoreanTriplets(56, 95) should be (Seq((57, 76, 95), (60, 63, 87)))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

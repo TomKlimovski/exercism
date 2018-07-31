@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/tomklimovski/Documents/GitHub/exercism/scala/flatten-array/src/main/scala/FlattenArray.scala:5:13: abstract type T in type pattern List[T] (the underlying of List[T]) is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case i: List[T] => flatten(i)[0m
+[0m[[0m[33mwarn[0m] [0m[0m            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
