@@ -1,7 +1,8 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mCollatzConjectureTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- zero steps for one[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- divide if even[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- even and odd steps[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Large number of even and odd steps[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- zero is an error[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- negative value is an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- zero steps for one (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- divide if even (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- even and odd steps (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- Large number of even and odd steps (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Largest Int  in the world[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- zero is an error (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- negative value is an error (pending)[0m[0m
